@@ -13,6 +13,8 @@ class Blog(models.Model):
         return self.title
 
 class Category(models.Model):
-    name = models.CharField(max_length=50)
+    title = models.CharField(max_length=50)
+    text_color = models.CharField(max_length = 100)
+    background_color = models.CharField(max_length = 100)
     def __str__(self):
-        return self.name
+        return self.title
